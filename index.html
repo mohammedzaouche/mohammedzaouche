@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammed Zaouche — Senior Graphic Designer</title>
+<meta name="description" content="Senior graphic designer. Ten years of brand systems, campaign design and motion across banking, healthcare, hospitality, luxury and tech — for clients in the Gulf and North Africa.">
+<meta property="og:title" content="Mohammed Zaouche — Senior Graphic Designer">
+<meta property="og:description" content="Brand systems, campaign design and motion across six sectors. Riyad Bank · One Global Hub · Mahrat Kuwait · ZAKUZA.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/mock-riyad.webp">
+<meta name="theme-color" content="#08060F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230b0818'/%3E%3Ctext x='50' y='68' font-family='Helvetica,Arial' font-size='50' font-weight='bold' fill='%239B7BFF' text-anchor='middle'%3EMZ%3C/text%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Outfit';font-style:normal;font-weight:200;font-display:swap;src:url('fonts/outfit-latin-200-normal.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/outfit-latin-300-normal.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/outfit-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/outfit-latin-500-normal.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/outfit-latin-600-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/inter-latin-300-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/inter-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/inter-latin-500-normal.woff2') format('woff2')}
+</style>
+<style>
+:root{
+  --bg:#08060F;
+  --ink:#F4F3FA;
+  --muted:#A9A4C4;
+  --dim:#6E6A8A;
+  --royal:#7C5CFF;        /* royal purple */
+  --royal-l:#A98CFF;
+  --blue:#3B6BFF;         /* royal blue  */
+  --blue-l:#6E93FF;
+  --glass:rgba(255,255,255,.055);
+  --glass-2:rgba(255,255,255,.09);
+  --stroke:rgba(255,255,255,.12);
+  --stroke-2:rgba(255,255,255,.22);
+  --grad:linear-gradient(135deg,#A98CFF 0%,#7C5CFF 42%,#3B6BFF 100%);
+  --blur:22px; --r:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-weight:300;
+  line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%}
+
+/* ------- ambient ------- */
+.bg{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform}
+.o1{width:660px;height:660px;background:radial-gradient(circle,#7C5CFF,transparent 68%);opacity:.6;top:-190px;right:-130px;animation:f1 27s ease-in-out infinite}
+.o2{width:740px;height:740px;background:radial-gradient(circle,#3B6BFF,transparent 68%);opacity:.5;top:32%;left:-270px;animation:f2 33s ease-in-out infinite}
+.o3{width:580px;height:580px;background:radial-gradient(circle,#9B6BFF,transparent 68%);opacity:.42;bottom:-170px;right:6%;animation:f3 30s ease-in-out infinite}
+.o4{width:520px;height:520px;background:radial-gradient(circle,#4B3AA8,transparent 68%);opacity:.5;top:60%;left:34%;animation:f1 37s ease-in-out infinite reverse}
+@keyframes f1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-70px,60px) scale(1.13)}}
+@keyframes f2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(90px,-70px) scale(1.1)}}
+@keyframes f3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-60px,-50px) scale(1.16)}}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E")}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 26px}
+
+/* ------- nav ------- */
+nav{position:fixed;top:16px;left:0;right:0;z-index:140;display:flex;justify-content:center;padding:0 18px}
+.navin{display:flex;align-items:center;gap:8px;padding:8px 8px 8px 18px;border-radius:100px;
+  background:rgba(11,8,24,.6);backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%);
+  border:1px solid var(--stroke);box-shadow:0 10px 34px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.1)}
+.navav{width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:center 18%;
+  border:1px solid rgba(255,255,255,.28);flex:none}
+.brand{font-family:'Outfit';font-weight:600;font-size:15px;letter-spacing:-.01em;margin:0 12px 0 9px;white-space:nowrap}
+.brand i{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.navlinks{display:flex;gap:2px}
+.navlinks a{font-size:13.5px;color:var(--muted);text-decoration:none;padding:7px 13px;border-radius:100px;transition:.2s;white-space:nowrap}
+.navlinks a:hover{color:#fff;background:rgba(255,255,255,.09)}
+.navcta{font-size:13.5px;font-weight:500;color:#fff;background:var(--grad);padding:9px 18px;border-radius:100px;
+  text-decoration:none;transition:.2s;white-space:nowrap;box-shadow:0 4px 20px rgba(124,92,255,.42)}
+.navcta:hover{transform:translateY(-1px);box-shadow:0 7px 26px rgba(124,92,255,.55)}
+@media(max-width:900px){.navlinks{display:none}}
+
+/* ------- hero ------- */
+header{padding:150px 0 80px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+@media(max-width:940px){.hero{grid-template-columns:1fr;gap:36px}.heroimg{order:-1}}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 17px 7px 12px;border-radius:100px;
+  background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--stroke);font-size:12.5px;color:var(--royal-l);letter-spacing:.05em;margin-bottom:26px}
+.dot{width:7px;height:7px;border-radius:50%;background:#5BE3A8;box-shadow:0 0 0 0 rgba(91,227,168,.6);animation:pulse 2.4s infinite;flex:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(91,227,168,.5)}70%{box-shadow:0 0 0 9px rgba(91,227,168,0)}100%{box-shadow:0 0 0 0 rgba(91,227,168,0)}}
+h1{font-family:'Outfit';font-size:clamp(42px,6.2vw,80px);line-height:1.02;font-weight:600;letter-spacing:-.032em;margin-bottom:20px}
+h1 .l{font-weight:200;color:#B6B1D0;display:block;font-size:.52em;letter-spacing:-.01em;margin-bottom:6px}
+h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role2{font-family:'Outfit';font-size:17px;font-weight:300;color:var(--muted);letter-spacing:.02em;margin-bottom:22px}
+.role2 b{color:#E4E1F3;font-weight:400}
+.tagline{font-size:18px;color:var(--muted);max-width:560px;font-weight:300;line-height:1.72;margin-bottom:34px}
+.tagline b{color:#fff;font-weight:500}
+.herobtns{display:flex;gap:11px;flex-wrap:wrap;margin-bottom:44px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:100px;text-decoration:none;
+  font-size:14.5px;font-weight:500;transition:.22s;border:1px solid transparent;cursor:pointer;font-family:'Inter'}
+.btn.p{background:var(--grad);color:#fff;box-shadow:0 6px 26px rgba(124,92,255,.4)}
+.btn.p:hover{transform:translateY(-2px);box-shadow:0 11px 34px rgba(124,92,255,.55)}
+.btn.s{background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-color:var(--stroke);color:var(--ink)}
+.btn.s:hover{background:var(--glass-2);border-color:var(--stroke-2);transform:translateY(-2px)}
+.btn.wa{background:rgba(37,211,102,.13);border-color:rgba(37,211,102,.4);color:#7FE9A8}
+.btn.wa:hover{background:rgba(37,211,102,.22);transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;flex:none}
+
+.heroimg{position:relative;display:flex;justify-content:center}
+.pf{position:relative;width:100%;max-width:360px;border-radius:26px;overflow:hidden;
+  border:1px solid var(--stroke);background:var(--glass);
+  box-shadow:0 26px 70px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.16)}
+.pf img{display:block;width:100%;height:auto}
+.pf::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(124,92,255,.06) 0%,transparent 32%,rgba(8,6,15,.55) 100%)}
+.pfbadge{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;padding:12px 16px;border-radius:16px;
+  background:rgba(11,8,24,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.16)}
+.pfbadge .n{font-family:'Outfit';font-size:15.5px;font-weight:600;letter-spacing:-.01em}
+.pfbadge .r{font-size:12.5px;color:var(--muted);margin-top:1px}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;max-width:760px}
+.stat{padding:20px 22px;border-radius:18px;background:var(--glass);border:1px solid var(--stroke);
+  backdrop-filter:blur(var(--blur)) saturate(160%);-webkit-backdrop-filter:blur(var(--blur)) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.13);transition:.25s}
+.stat:hover{background:var(--glass-2);transform:translateY(-3px)}
+.stat .n{font-family:'Outfit';font-size:34px;font-weight:600;line-height:1;
+  background:linear-gradient(135deg,#fff,#A98CFF);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:5px}
+.stat .k{font-size:12px;color:var(--dim);letter-spacing:.09em;text-transform:uppercase}
+
+/* ------- sections ------- */
+section{padding:92px 0;position:relative;scroll-margin-top:92px}
+.shead{margin-bottom:40px;max-width:760px}
+.slabel{display:inline-block;font-family:'Outfit';font-size:12px;letter-spacing:.28em;text-transform:uppercase;
+  font-weight:600;margin-bottom:15px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-family:'Outfit';font-size:clamp(29px,4.2vw,44px);font-weight:600;letter-spacing:-.026em;line-height:1.12;margin-bottom:15px}
+.sdesc{font-size:16.5px;color:var(--muted);font-weight:300;line-height:1.75}
+
+/* ------- clients ------- */
+.clients{display:grid;grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:14px}
+.cl{padding:24px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--stroke);
+  backdrop-filter:blur(var(--blur)) saturate(160%);-webkit-backdrop-filter:blur(var(--blur)) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12);transition:.28s;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:space-between;min-height:132px}
+.cl:hover{background:var(--glass-2);transform:translateY(-4px);border-color:var(--stroke-2)}
+.cl::before{content:"";position:absolute;top:-60%;right:-40%;width:190px;height:190px;border-radius:50%;
+  background:radial-gradient(circle,rgba(124,92,255,.3),transparent 70%);filter:blur(28px);opacity:0;transition:.35s}
+.cl:hover::before{opacity:1}
+.cl .mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;margin-bottom:14px;
+  font-family:'Outfit';font-size:15px;font-weight:600;color:#CFC3FF;
+  background:linear-gradient(135deg,rgba(169,140,255,.24),rgba(59,107,255,.1));
+  border:1px solid rgba(169,140,255,.3)}
+.cl .nm{font-family:'Outfit';font-size:16px;font-weight:500;letter-spacing:-.008em;line-height:1.25;position:relative}
+.cl .sc{font-size:12.5px;color:var(--dim);margin-top:4px;position:relative}
+
+/* ------- filters ------- */
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:32px}
+.fbtn{font-family:'Inter';font-size:13.5px;font-weight:400;cursor:pointer;padding:10px 19px;border-radius:100px;
+  background:var(--glass);border:1px solid var(--stroke);color:var(--muted);transition:.22s;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.fbtn:hover{color:#fff;border-color:var(--stroke-2);background:var(--glass-2)}
+.fbtn.on{background:var(--grad);color:#fff;border-color:transparent;font-weight:500;box-shadow:0 4px 20px rgba(124,92,255,.4)}
+
+/* ------- project grid ------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:22px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.pcard{position:relative;border-radius:var(--r);overflow:hidden;cursor:pointer;
+  background:var(--glass);border:1px solid var(--stroke);
+  backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));
+  box-shadow:0 10px 36px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.13);
+  transition:transform .38s cubic-bezier(.2,.7,.3,1), box-shadow .38s, border-color .3s;
+  opacity:0;transform:translateY(24px)}
+.pcard.in{opacity:1;transform:translateY(0)}
+.pcard:hover{transform:translateY(-7px);border-color:var(--stroke-2);
+  box-shadow:0 24px 58px rgba(0,0,0,.55), 0 0 0 1px rgba(124,92,255,.24), inset 0 1px 0 rgba(255,255,255,.16)}
+/* cover art is authored at 16:11 — the box matches it exactly, so nothing is ever cropped */
+.pthumb{position:relative;aspect-ratio:16/11;overflow:hidden;background:#0c0918}
+.pthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+.pcard:hover .pthumb img{transform:scale(1.045)}
+.chip{position:absolute;top:14px;left:14px;z-index:2;font-size:11.5px;font-weight:500;letter-spacing:.04em;
+  padding:6px 13px;border-radius:100px;background:rgba(11,8,24,.62);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.17);color:#E6E3F4}
+.chip.loc{left:auto;right:14px;color:#C6B4FF;border-color:rgba(124,92,255,.42);background:rgba(124,92,255,.18)}
+.pbody{padding:19px 21px 21px}
+.pbody h3{font-family:'Outfit';font-size:20px;font-weight:600;letter-spacing:-.012em;margin-bottom:6px;line-height:1.25}
+.pmeta{font-size:12.5px;color:var(--dim);margin-bottom:12px}
+.ptags{display:flex;gap:6px;flex-wrap:wrap}
+.ptag{font-size:11px;padding:4px 10px;border-radius:100px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.09);color:#9C97BC}
+
+/* ------- capabilities ------- */
+.caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:18px}
+.cap{padding:28px 26px;border-radius:20px;background:var(--glass);border:1px solid var(--stroke);
+  backdrop-filter:blur(var(--blur)) saturate(160%);-webkit-backdrop-filter:blur(var(--blur)) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.13);transition:.28s;position:relative;overflow:hidden}
+.cap:hover{background:var(--glass-2);transform:translateY(-4px);border-color:var(--stroke-2)}
+.cap::before{content:"";position:absolute;top:-40%;right:-30%;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(124,92,255,.26),transparent 70%);filter:blur(30px);opacity:0;transition:.35s}
+.cap:hover::before{opacity:1}
+.capicon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;margin-bottom:15px;font-size:19px;color:#C9BAFF;
+  background:linear-gradient(135deg,rgba(169,140,255,.24),rgba(59,107,255,.08));border:1px solid rgba(169,140,255,.3)}
+.cap h4{font-family:'Outfit';font-size:17.5px;font-weight:600;margin-bottom:9px;letter-spacing:-.01em;position:relative}
+.cap p{font-size:14.2px;color:var(--muted);line-height:1.7;position:relative}
+
+/* ------- about ------- */
+.about{display:grid;grid-template-columns:1.35fr 1fr;gap:24px;align-items:start}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+.abox{padding:32px;border-radius:var(--r);background:var(--glass);border:1px solid var(--stroke);
+  backdrop-filter:blur(var(--blur)) saturate(160%);-webkit-backdrop-filter:blur(var(--blur)) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.13)}
+.abox p{font-size:15.8px;color:#CDC9E2;margin-bottom:15px;line-height:1.8}
+.abox p:last-child{margin-bottom:0}
+.abox .big{font-family:'Outfit';font-size:22px;font-weight:400;color:#fff;line-height:1.45;margin-bottom:20px;letter-spacing:-.014em}
+.arow{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14.5px}
+.arow:last-of-type{border-bottom:none}
+.arow .k{color:var(--dim)}
+.arow .v{color:#E6E3F4;font-weight:400;text-align:right}
+.tools{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.tool{font-family:'Outfit';font-size:12.5px;font-weight:500;padding:7px 13px;border-radius:9px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#B6B1D0}
+
+/* ------- contact ------- */
+.cta{padding:54px 42px;border-radius:30px;text-align:center;position:relative;overflow:hidden;
+  background:var(--glass);border:1px solid var(--stroke);
+  backdrop-filter:blur(26px) saturate(170%);-webkit-backdrop-filter:blur(26px) saturate(170%);
+  box-shadow:0 22px 62px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.15)}
+.cta::before{content:"";position:absolute;top:-55%;left:50%;transform:translateX(-50%);width:640px;height:430px;
+  background:radial-gradient(ellipse,rgba(124,92,255,.3),transparent 66%);filter:blur(58px)}
+.cta>*{position:relative}
+.cta h2{margin-bottom:13px}
+.cta p{font-size:16.5px;color:var(--muted);max-width:530px;margin:0 auto 30px}
+.ctabtns{display:flex;gap:11px;justify-content:center;flex-wrap:wrap}
+.avail{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:#5BE3A8;margin-bottom:18px;
+  padding:7px 16px;border-radius:100px;background:rgba(91,227,168,.1);border:1px solid rgba(91,227,168,.24)}
+
+/* floating whatsapp */
+.wafab{position:fixed;right:22px;bottom:22px;z-index:150;width:56px;height:56px;border-radius:50%;
+  display:grid;place-items:center;text-decoration:none;
+  background:linear-gradient(135deg,#3ADB77,#1EA95A);box-shadow:0 10px 30px rgba(37,211,102,.42);
+  transition:.24s;border:1px solid rgba(255,255,255,.22)}
+.wafab:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 14px 38px rgba(37,211,102,.6)}
+.wafab svg{width:28px;height:28px;fill:#fff}
+@media(max-width:600px){.wafab{right:16px;bottom:16px;width:52px;height:52px}}
+
+footer{padding:42px 0 60px;border-top:1px solid rgba(255,255,255,.08);margin-top:66px}
+.fin{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.fin p{font-size:13.5px;color:var(--dim)}
+.flinks{display:flex;gap:18px;flex-wrap:wrap}
+.flinks a{font-size:13.5px;color:var(--muted);text-decoration:none;transition:.2s}
+.flinks a:hover{color:var(--royal-l)}
+
+/* ------- lightbox ------- */
+.lb{position:fixed;inset:0;z-index:300;display:none;background:rgba(6,4,13,.9);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+.lb.open{display:block;animation:fade .3s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.lbwrap{max-width:1080px;margin:0 auto;padding:88px 22px 80px}
+.lbhead{margin-bottom:26px}
+.chiprow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}
+.chiprow .chip{position:static}
+.lbhead h3{font-family:'Outfit';font-size:clamp(27px,4.4vw,40px);font-weight:600;letter-spacing:-.026em;margin-bottom:13px;line-height:1.12}
+.lbhead p{font-size:16px;color:var(--muted);max-width:720px;line-height:1.8}
+.lbclose{position:fixed;top:20px;right:22px;z-index:310;width:46px;height:46px;border-radius:50%;cursor:pointer;
+  background:rgba(255,255,255,.09);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--stroke);color:#fff;font-size:21px;line-height:1;display:grid;place-items:center;transition:.2s;font-family:'Inter'}
+.lbclose:hover{background:rgba(255,255,255,.2);transform:rotate(90deg)}
+.lbgrid{column-count:2;column-gap:16px}
+@media(max-width:820px){.lbgrid{column-count:1}}
+.lbgrid figure{break-inside:avoid;margin:0 0 16px;border-radius:16px;overflow:hidden;
+  border:1px solid var(--stroke);background:#0c0918;box-shadow:0 12px 36px rgba(0,0,0,.45);line-height:0}
+/* true aspect ratio, always — height:auto means the browser can never squash a frame */
+.lbgrid img{display:block;width:100%;height:auto;object-fit:contain}
+.lbnav{display:flex;justify-content:space-between;gap:12px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.09)}
+.lbnav button{font-family:'Inter';font-size:13.5px;cursor:pointer;padding:12px 20px;border-radius:100px;
+  background:var(--glass);border:1px solid var(--stroke);color:var(--ink);transition:.2s;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);max-width:47%;text-align:left}
+.lbnav button:hover:not(:disabled){background:var(--glass-2);border-color:var(--stroke-2)}
+.lbnav button:disabled{opacity:.3;cursor:default}
+.lbnav button span{display:block;font-size:10.5px;color:var(--dim);letter-spacing:.11em;text-transform:uppercase;margin-bottom:2px}
+body.lock{overflow:hidden}
+
+
+/* ================= MOTION SYSTEM ================= */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.16,.8,.3,1),transform .9s cubic-bezier(.16,.8,.3,1)}
+.rv.in{opacity:1;transform:none}
+.rv-l{opacity:0;transform:translateX(-34px);transition:opacity .9s cubic-bezier(.16,.8,.3,1),transform .9s cubic-bezier(.16,.8,.3,1)}
+.rv-l.in{opacity:1;transform:none}
+.rv-r{opacity:0;transform:translateX(34px);transition:opacity .9s cubic-bezier(.16,.8,.3,1),transform .9s cubic-bezier(.16,.8,.3,1)}
+.rv-r.in{opacity:1;transform:none}
+.rv-s{opacity:0;transform:scale(.94);transition:opacity .8s cubic-bezier(.16,.8,.3,1),transform .8s cubic-bezier(.16,.8,.3,1)}
+.rv-s.in{opacity:1;transform:none}
+
+/* hero entrance */
+@keyframes riseIn{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+.enter{opacity:0;animation:riseIn .95s cubic-bezier(.16,.8,.3,1) forwards}
+
+/* animated gradient on the headline */
+h1 .grad{background:linear-gradient(110deg,#A98CFF 0%,#7C5CFF 26%,#3B6BFF 52%,#A98CFF 78%,#7C5CFF 100%);
+  background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shift 11s ease-in-out infinite}
+@keyframes shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* scroll progress */
+.prog{position:fixed;top:0;left:0;height:2px;width:0;z-index:200;background:var(--grad);
+  box-shadow:0 0 12px rgba(124,92,255,.8);transition:width .1s linear}
+
+/* nav condenses on scroll */
+.navin{transition:padding .35s cubic-bezier(.2,.7,.3,1), background .35s, box-shadow .35s, transform .35s}
+nav.small .navin{padding:5px 5px 5px 14px;background:rgba(11,8,24,.78);box-shadow:0 12px 40px rgba(0,0,0,.6)}
+nav.small .navav{width:26px;height:26px}
+nav.small .brand{font-size:14px}
+
+/* card 3D tilt */
+.pcard{transform-style:preserve-3d;will-change:transform}
+.pcard .pbody,.pcard .pthumb{transform:translateZ(0)}
+
+/* shine sweep across buttons */
+.btn.p,.navcta{position:relative;overflow:hidden}
+.btn.p::after,.navcta::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.42),transparent);transform:skewX(-18deg)}
+.btn.p:hover::after,.navcta:hover::after{animation:sweep .85s ease}
+@keyframes sweep{to{left:135%}}
+
+/* stat counters + icon life */
+.stat .n{font-variant-numeric:tabular-nums}
+.capicon{transition:transform .45s cubic-bezier(.2,.7,.3,1), background .3s}
+.cap:hover .capicon{transform:translateY(-3px) rotate(-8deg) scale(1.08)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.pf{animation:floaty 7s ease-in-out infinite}
+
+/* filter buttons */
+.fbtn{transition:.25s cubic-bezier(.2,.7,.3,1)}
+.fbtn:active{transform:scale(.95)}
+
+/* ================= BRAND MARQUEE ================= */
+.mrows{display:flex;flex-direction:column;gap:15px}
+.mrow{overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.mtrack{display:flex;gap:15px;width:max-content;will-change:transform}
+.mtrack.rtl{animation:mLeft 42s linear infinite}   /* row 1 — right to left */
+.mtrack.ltr{animation:mRight 42s linear infinite}  /* row 2 — left to right */
+@keyframes mLeft {from{transform:translateX(0)}      to{transform:translateX(-50%)}}
+@keyframes mRight{from{transform:translateX(-50%)}   to{transform:translateX(0)}}
+.mrow:hover .mtrack{animation-play-state:paused}
+.bpill{display:flex;align-items:center;gap:14px;flex:none;padding:16px 26px 16px 18px;border-radius:100px;
+  background:var(--glass);border:1px solid var(--stroke);
+  backdrop-filter:blur(var(--blur)) saturate(160%);-webkit-backdrop-filter:blur(var(--blur)) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.13);transition:.3s;white-space:nowrap}
+.bpill:hover{background:var(--glass-2);border-color:rgba(169,140,255,.45);transform:translateY(-3px);
+  box-shadow:0 12px 34px rgba(124,92,255,.24), inset 0 1px 0 rgba(255,255,255,.18)}
+.bpill .mk{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;flex:none;
+  font-family:'Outfit';font-size:15px;font-weight:600;color:#D3C7FF;
+  background:linear-gradient(135deg,rgba(169,140,255,.28),rgba(59,107,255,.1));
+  border:1px solid rgba(169,140,255,.34)}
+.bpill .tx .nm{font-family:'Outfit';font-size:16px;font-weight:500;letter-spacing:-.008em;line-height:1.2}
+.bpill .tx .sc{font-size:12px;color:var(--dim);margin-top:2px}
+@media(max-width:600px){.bpill{padding:13px 20px 13px 14px}.bpill .mk{width:36px;height:36px;font-size:13px}
+  .bpill .tx .nm{font-size:14.5px}.bpill .tx .sc{font-size:11px}}
+
+#clients{padding-bottom:34px}
+#contact{padding-top:58px}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .rv,.rv-l,.rv-r,.rv-s,.enter{opacity:1!important;transform:none!important}
+}
+
+@media(max-width:640px){
+  header{padding:118px 0 58px}
+  section{padding:66px 0}
+  .cta{padding:40px 22px}
+  .abox{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="prog" id="prog"></div>
+<div class="bg"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="orb o4"></div></div>
+<div class="grain"></div>
+
+<nav>
+  <div class="navin">
+    <img class="navav" src="img/portrait.webp" alt="Mohammed Zaouche">
+    <div class="brand">Mohammed <i>Zaouche</i></div>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#about">About</a>
+      <a href="#clients">Clients</a>
+    </div>
+    <a class="navcta" href="#contact">Let's talk</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow enter" style="animation-delay:.05s"><i class="dot"></i> Available for senior design roles &amp; freelance</div>
+      <h1 class="enter" style="animation-delay:.14s"><span class="l">Mohammed Zaouche</span><span class="grad">Senior Graphic&nbsp;Designer</span></h1>
+      <div class="role2 enter" style="animation-delay:.23s">Ten years across banking, healthcare, hospitality, luxury and tech — <b>also working as art director</b> when the project calls for it.</div>
+      <p class="tagline enter" style="animation-delay:.31s">I build brand systems and campaigns that do a job, not just fill a feed. <b>Riyad Bank. One Global Hub. Mahrat Kuwait. ZAKUZA.</b></p>
+      <div class="herobtns enter" style="animation-delay:.39s">
+        <a class="btn p" href="#work">View the work →</a>
+        <a class="btn wa" href="https://wa.me/213791952005" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn s" href="Mohammed-Zaouche-CV.pdf" download>Download CV</a>
+      </div>
+      <div class="stats enter" style="animation-delay:.47s">
+        <div class="stat"><div class="n" data-to="10+">0</div><div class="k">Years</div></div>
+        <div class="stat"><div class="n" data-to="5">0</div><div class="k">Sectors</div></div>
+        <div class="stat"><div class="n" data-to="12">0</div><div class="k">Case studies</div></div>
+        <div class="stat"><div class="n" data-to="3">0</div><div class="k">Languages</div></div>
+      </div>
+    </div>
+    <div class="heroimg enter" style="animation-delay:.28s">
+      <div class="pf">
+        <img src="img/portrait.webp" alt="Mohammed Zaouche" width="725" height="900">
+        <div class="pfbadge">
+          <div class="n">Mohammed Zaouche</div>
+          <div class="r">Senior Graphic Designer · Algeria</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="slabel">Selected Work</span>
+      <h2>Five sectors, one way of working</h2>
+      <p class="sdesc">Every brief starts the same way: who are we talking to, what do we want them to do, and what will make them stop scrolling long enough to do it. What changes is the answer. Click any project for the full set.</p>
+    </div>
+    <div class="filters rv" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="capabilities">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="slabel">Capabilities</span>
+      <h2>What I actually do</h2>
+      <p class="sdesc">Not a tools list. These are the four things clients hire me for, and the reason the work holds together across a campaign instead of falling apart at post three.</p>
+    </div>
+    <div class="caps">
+      <div class="cap rv">
+        <div class="capicon">◆</div>
+        <h4>Graphic Design</h4>
+        <p>The core craft — composition, hierarchy, colour and type applied to whatever the format demands, from a single feed post to a full campaign rollout across print and digital.</p>
+      </div>
+      <div class="cap rv">
+        <div class="capicon">◇</div>
+        <h4>Brand Identity</h4>
+        <p>Logos, marks and the systems around them — type scales, colour logic, grids and rules, so the brand survives contact with everyone who will ever have to build something in it.</p>
+      </div>
+      <div class="cap rv">
+        <div class="capicon">▦</div>
+        <h4>Campaign &amp; Social Systems</h4>
+        <p>Concepts and templates built for the platform rather than resized for it, so a month of content stays recognisably one brand instead of drifting a little further with every deadline.</p>
+      </div>
+      <div class="cap rv">
+        <div class="capicon">▷</div>
+        <h4>Motion &amp; Video</h4>
+        <p>After Effects and Premiere Pro. Explainer videos, animated ads, reels and promo edits — directed and executed in-house, which usually means one less hire and a faster turnaround.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="slabel">About</span>
+      <h2>A beautiful post that nobody stops for is a failed post</h2>
+    </div>
+    <div class="about">
+      <div class="abox rv-l">
+        <p class="big">That is the standard I have worked to for over ten years.</p>
+        <p>I started out co-founding a production studio at twenty and spent four years learning the fastest design lesson there is: how to defend a creative decision to a client who is paying for it. Since then the work has moved through food delivery, health technology, IT services, government platforms, retail banking and luxury fragrance — in Algeria and across the Gulf.</p>
+        <p>Different industries, one question every time. I work backwards from the business goal to the pixel, never the other way round.</p>
+        <p>I hold a BA in Fine Arts and an MA in Cinematography from the University of Oran. The film training is why I think in sequences and framing rather than layouts alone — it shows most clearly in the motion work.</p>
+        <p>I am currently open to senior design roles, remote or on-site in the Gulf, and I take on selected freelance projects.</p>
+      </div>
+      <div class="abox rv-r">
+        <div class="arow"><span class="k">Based in</span><span class="v">Algeria · Remote worldwide</span></div>
+        <div class="arow"><span class="k">Languages</span><span class="v">Arabic · French · English</span></div>
+        <div class="arow"><span class="k">Education</span><span class="v">BA Fine Arts<br>MA Cinematography</span></div>
+        <div class="arow"><span class="k">Sectors</span><span class="v">Banking · Healthcare<br>Hospitality · Luxury · Tech</span></div>
+        <div class="arow"><span class="k">Markets</span><span class="v">Gulf · North Africa · Europe</span></div>
+        <div class="tools">
+          <span class="tool">Photoshop</span><span class="tool">Illustrator</span>
+          <span class="tool">After Effects</span><span class="tool">Premiere Pro</span>
+          <span class="tool">Lightroom</span><span class="tool">Audition</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="slabel">Clients</span>
+      <h2>Brands I've built systems for</h2>
+      <p class="sdesc">A national bank, a Kuwaiti venture platform, a luxury fragrance house, a delivery app, three healthcare brands and two coffee cultures. The range is the point — the method is the same every time.</p>
+    </div>
+  </div>
+  <div class="mrows rv">
+    <div class="mrow"><div class="mtrack rtl" id="row1"></div></div>
+    <div class="mrow"><div class="mtrack ltr" id="row2"></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta rv-s">
+      <div class="avail"><i class="dot"></i> Open to opportunities</div>
+      <h2>Let's make something worth stopping for</h2>
+      <p>Whether it's a full-time role, a campaign, or a brand that needs a system instead of a pile of posts — I'd like to hear about it.</p>
+      <div class="ctabtns">
+        <a class="btn p" href="https://wa.me/213791952005" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.5-.3z"/></svg>
+          +213 791 952 005
+        </a>
+        <a class="btn s" href="mailto:mohammmedzaouche@gmail.com">mohammmedzaouche@gmail.com</a>
+        <a class="btn s" href="https://www.linkedin.com/in/mohamedzawech/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn s" href="Mohammed-Zaouche-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fin">
+    <p>© 2026 Mohammed Zaouche — Senior Graphic Designer</p>
+    <div class="flinks">
+      <a href="https://wa.me/213791952005" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:mohammmedzaouche@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/mohamedzawech/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="Mohammed-Zaouche-CV.pdf" download>CV</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wafab" href="https://wa.me/213791952005" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.5-.3z"/></svg>
+</a>
+
+<div class="lb" id="lb">
+  <button class="lbclose" id="lbclose" aria-label="Close">×</button>
+  <div class="lbwrap">
+    <div class="lbhead">
+      <div class="chiprow" id="lbchips"></div>
+      <h3 id="lbtitle"></h3>
+      <p id="lbdesc"></p>
+    </div>
+    <div class="lbgrid" id="lbgrid"></div>
+    <div class="lbnav">
+      <button id="lbprev"><span>Previous</span><b id="lbprevt"></b></button>
+      <button id="lbnext" style="text-align:right"><span>Next</span><b id="lbnextt"></b></button>
+    </div>
+  </div>
+</div>
+
+<script>
+const PROJECTS = [
+ {
+  "id": "riyad",
+  "title": "Riyad Bank — Retail Services",
+  "client": "Riyad Bank",
+  "sector": "Banking & Fintech",
+  "cat": "finance",
+  "loc": "Saudi Arabia",
+  "year": "2025",
+  "blurb": "Retail banking has a credibility problem on social: it either reads as cold corporate boilerplate, or it tries so hard to be friendly that it stops looking like a bank. This system holds both — confident structure, generous space, and a campaign line that stays legible at the size people actually see it.",
+  "tags": [
+   "Campaign Design",
+   "Visual System",
+   "Motion"
+  ],
+  "images": [
+   {
+    "src": "img/mock-riyad.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/riyad-1.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/riyad-2.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/riyad-3.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/riyad-4.webp",
+    "w": 1400,
+    "h": 1400
+   },
+   {
+    "src": "img/riyad-5.webp",
+    "w": 1400,
+    "h": 1750
+   },
+   {
+    "src": "img/riyad-6.webp",
+    "w": 1400,
+    "h": 1750
+   }
+  ],
+  "cover": {
+   "src": "img/mock-riyad.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "oghub",
+  "title": "One Global Hub",
+  "client": "One Global Hub",
+  "sector": "Tech & Innovation",
+  "cat": "tech",
+  "loc": "Kuwait",
+  "year": "2025",
+  "blurb": "A venture-building platform in Kuwait arrived with a specific complaint: their social read as generic service announcements with no emotional recall. The answer was a system rather than better posts — a colour strategy built on deep blue and sky tones warmed with gold, a brand mascot drawn out of the logo mark itself, and a campaign line that finally gave the whole thing something to say.",
+  "tags": [
+   "Brand Strategy",
+   "Mascot Design",
+   "Colour System",
+   "Campaign"
+  ],
+  "images": [
+   {
+    "src": "img/mock-oghub.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/oghub-1.webp",
+    "w": 651,
+    "h": 2400
+   }
+  ],
+  "cover": {
+   "src": "img/mock-oghub.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "fintech",
+  "title": "Fintech Campaign — KSA",
+  "client": "Fintech, Saudi Arabia",
+  "sector": "Banking & Fintech",
+  "cat": "finance",
+  "loc": "Saudi Arabia",
+  "year": "2025",
+  "blurb": "Financial products are abstract by nature — you cannot photograph a transfer fee. The work here gives them physical presence: tangible objects, weighted type, and a colour system built to stay recognisable at thumbnail size, where most of these posts are actually seen.",
+  "tags": [
+   "Visual System",
+   "3D & Composite",
+   "Campaign Design"
+  ],
+  "images": [
+   {
+    "src": "img/mock-fintech.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/fintech-1.webp",
+    "w": 1080,
+    "h": 1440
+   },
+   {
+    "src": "img/fintech-2.webp",
+    "w": 1080,
+    "h": 1440
+   },
+   {
+    "src": "img/fintech-3.webp",
+    "w": 1080,
+    "h": 1440
+   },
+   {
+    "src": "img/fintech-4.webp",
+    "w": 1500,
+    "h": 844
+   },
+   {
+    "src": "img/fintech-5.webp",
+    "w": 1500,
+    "h": 2000
+   }
+  ],
+  "cover": {
+   "src": "img/mock-fintech.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "zakuza",
+  "title": "ZAKUZA — Coffee Culture",
+  "client": "ZAKUZA",
+  "sector": "Food & Hospitality",
+  "cat": "food",
+  "loc": "—",
+  "year": "2025",
+  "blurb": "A coffee brand that wanted to look like a culture rather than a menu. Editorial photography direction, warm terracotta against cream, and confident display type — closer to a fashion campaign than a cafe flyer, which is exactly where the category was heading.",
+  "tags": [
+   "Photography Direction",
+   "Editorial",
+   "Brand Campaign"
+  ],
+  "images": [
+   {
+    "src": "img/mock-zakuza.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/zakuza-1.webp",
+    "w": 600,
+    "h": 750
+   },
+   {
+    "src": "img/zakuza-2.webp",
+    "w": 600,
+    "h": 750
+   },
+   {
+    "src": "img/zakuza-3.webp",
+    "w": 600,
+    "h": 750
+   },
+   {
+    "src": "img/zakuza-4.webp",
+    "w": 600,
+    "h": 750
+   },
+   {
+    "src": "img/zakuza-5.webp",
+    "w": 600,
+    "h": 750
+   },
+   {
+    "src": "img/zakuza-6.webp",
+    "w": 600,
+    "h": 750
+   }
+  ],
+  "cover": {
+   "src": "img/mock-zakuza.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "dima",
+  "title": "Dima Dental Center",
+  "client": "Dima Dental Center",
+  "sector": "Healthcare",
+  "cat": "health",
+  "loc": "—",
+  "year": "2025",
+  "blurb": "Most dental marketing sells fear — the before, the decay, the warning. This campaign sells calm instead. Soft light, real faces, and a clinical palette that reassures rather than alarms, because the decision to book an appointment is emotional long before it is medical.",
+  "tags": [
+   "Campaign",
+   "Photography Direction",
+   "Social System"
+  ],
+  "images": [
+   {
+    "src": "img/mock-dima.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/dima-1.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/dima-2.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/dima-3.webp",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "src": "img/dima-4.webp",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "src": "img/dima-5.webp",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "src": "img/dima-6.webp",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "src": "img/dima-7.webp",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "src": "img/dima-8.webp",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "src": "img/dima-9.webp",
+    "w": 1400,
+    "h": 788
+   },
+   {
+    "src": "img/dima-10.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/dima-11.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/dima-12.webp",
+    "w": 1500,
+    "h": 625
+   },
+   {
+    "src": "img/dima-13.webp",
+    "w": 1400,
+    "h": 1308
+   }
+  ],
+  "cover": {
+   "src": "img/mock-dima.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "mora",
+  "title": "MORA Café",
+  "client": "MORA Café",
+  "sector": "Food & Hospitality",
+  "cat": "food",
+  "loc": "—",
+  "year": "2025",
+  "blurb": "Coffee brands do not sell coffee, they sell a place you want to be. Warm tones, close crops, and a posting rhythm that makes the feed itself feel like somewhere worth sitting down in.",
+  "tags": [
+   "Brand Atmosphere",
+   "Product Photography",
+   "Social Campaign"
+  ],
+  "images": [
+   {
+    "src": "img/mock-mora.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/mora-1.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/mora-2.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/mora-3.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/mora-4.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/mora-5.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ],
+  "cover": {
+   "src": "img/mock-mora.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "medsys",
+  "title": "Healthcare Social System",
+  "client": "Medical brand",
+  "sector": "Healthcare",
+  "cat": "health",
+  "loc": "—",
+  "year": "2024",
+  "blurb": "A complete social system rather than a set of posts: one grid, one type scale, one colour logic — flexible enough to carry announcements, patient education and promotion without any of them breaking the family resemblance.",
+  "tags": [
+   "Design System",
+   "Templates",
+   "Campaign Design"
+  ],
+  "images": [
+   {
+    "src": "img/mock-medsys.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/medsys-1.webp",
+    "w": 1500,
+    "h": 1251
+   },
+   {
+    "src": "img/medsys-2.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/medsys-3.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/medsys-4.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/medsys-5.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "img/medsys-6.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ],
+  "cover": {
+   "src": "img/mock-medsys.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "amer",
+  "title": "Amer Scope — Medical",
+  "client": "Amer Scope",
+  "sector": "Healthcare",
+  "cat": "health",
+  "loc": "—",
+  "year": "2024",
+  "blurb": "Medical communication has to be precise without becoming sterile. Wide horizontal layouts, restrained colour, and typography that carries authority — designed so a specialist and a first-time patient can both read the same post and take the right thing from it.",
+  "tags": [
+   "Editorial Layout",
+   "Infographic",
+   "Visual System"
+  ],
+  "images": [
+   {
+    "src": "img/mock-amer.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/amer-1.webp",
+    "w": 1400,
+    "h": 1052
+   },
+   {
+    "src": "img/amer-2.webp",
+    "w": 1400,
+    "h": 644
+   },
+   {
+    "src": "img/amer-3.webp",
+    "w": 1400,
+    "h": 633
+   },
+   {
+    "src": "img/amer-4.webp",
+    "w": 1400,
+    "h": 616
+   },
+   {
+    "src": "img/amer-5.webp",
+    "w": 1400,
+    "h": 712
+   }
+  ],
+  "cover": {
+   "src": "img/mock-amer.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "mriguel",
+  "title": "Mriguel — Food Delivery",
+  "client": "Mriguel",
+  "sector": "Food & Hospitality",
+  "cat": "food",
+  "loc": "Algeria",
+  "year": "2022–2023",
+  "blurb": "Directed the brand’s entire social presence during its growth phase. A high-contrast orange world, cut-out photography of real people caught mid-motion, and dialect copy that made a delivery app feel like a friend rather than a utility.",
+  "tags": [
+   "Campaign Design",
+   "Brand System",
+   "Reels & Motion"
+  ],
+  "images": [
+   {
+    "src": "img/mock-mriguel.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/mriguel-1.webp",
+    "w": 1240,
+    "h": 1754
+   },
+   {
+    "src": "img/mriguel-2.webp",
+    "w": 1240,
+    "h": 1754
+   }
+  ],
+  "cover": {
+   "src": "img/mock-mriguel.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "mahrat",
+  "title": "Mahrat Kuwait — Fragrance",
+  "client": "Mahrat Kuwait",
+  "sector": "Retail & Luxury",
+  "cat": "retail",
+  "loc": "Kuwait",
+  "year": "2024",
+  "blurb": "Luxury fragrance for a Gulf audience. Dark, gold-lit product direction built on volcanic stone and still-life composition — where restraint does the selling and every element has to earn its place in the frame.",
+  "tags": [
+   "Luxury Direction",
+   "Product",
+   "Campaign"
+  ],
+  "images": [
+   {
+    "src": "img/mock-mahrat.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/mahrat-1.webp",
+    "w": 1240,
+    "h": 1754
+   }
+  ],
+  "cover": {
+   "src": "img/mock-mahrat.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "cyber",
+  "title": "Cyber Health 365",
+  "client": "Cyber Health 365",
+  "sector": "Healthcare",
+  "cat": "health",
+  "loc": "—",
+  "year": "2024",
+  "blurb": "A trust-first visual system for a medical platform that had to be legible to doctors and patients at the same time. Blues and teals, generous space, and a seasonal campaign that stayed inside the same system instead of breaking out of it.",
+  "tags": [
+   "Visual System",
+   "Health Tech",
+   "Campaign"
+  ],
+  "images": [
+   {
+    "src": "img/mock-cyber.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/cyber-1.webp",
+    "w": 1240,
+    "h": 1754
+   }
+  ],
+  "cover": {
+   "src": "img/mock-cyber.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ },
+ {
+  "id": "siwaar",
+  "title": "Siwaar — IT Services",
+  "client": "Siwaar",
+  "sector": "Tech & Innovation",
+  "cat": "tech",
+  "loc": "—",
+  "year": "2023",
+  "blurb": "Technical services sold to consumers have a warmth problem. A high-energy gradient world with 3D elements and a recurring cast of characters made the offering feel current and human instead of like a spec sheet.",
+  "tags": [
+   "Brand World",
+   "3D",
+   "Character Design"
+  ],
+  "images": [
+   {
+    "src": "img/mock-siwaar.webp",
+    "w": 1600,
+    "h": 1100
+   },
+   {
+    "src": "img/siwaar-1.webp",
+    "w": 1240,
+    "h": 1754
+   }
+  ],
+  "cover": {
+   "src": "img/mock-siwaar.webp",
+   "w": 1600,
+   "h": 1100
+  }
+ }
+];
+
+const CATS = [
+  {id:'all',     label:'All work'},
+  {id:'finance', label:'Banking & Fintech'},
+  {id:'health',  label:'Healthcare'},
+  {id:'food',    label:'Food & Hospitality'},
+  {id:'retail',  label:'Retail & Luxury'},
+  {id:'tech',    label:'Tech & Innovation'}
+];
+
+const CLIENTS = [
+  {n:'Riyad Bank',        s:'Banking · Saudi Arabia'},
+  {n:'One Global Hub',    s:'Innovation · Kuwait'},
+  {n:'Mahrat Kuwait',     s:'Luxury Fragrance · Kuwait'},
+  {n:'Mriguel',           s:'Food Delivery · Algeria'},
+  {n:'ZAKUZA',            s:'Coffee · Hospitality'},
+  {n:'MORA Café',         s:'Coffee · Hospitality'},
+  {n:'Dima Dental Center',s:'Healthcare'},
+  {n:'Cyber Health 365',  s:'Health Technology'},
+  {n:'Amer Scope',        s:'Healthcare'},
+  {n:'Siwaar',            s:'IT Services'},
+  {n:'Hadeb',             s:'IT Services & Consulting'},
+  {n:'Madayen',           s:'Public Sector'},
+  {n:'NCMS — Tasarih',    s:'Industrial · Platform'},
+  {n:'Karate Federation', s:'National Sports Body'}
+];
+
+const initials = n => n.replace(/[^A-Za-z ]/g,'').split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase() || 'MZ';
+const pill = c => `<div class="bpill"><div class="mk">${initials(c.n)}</div>
+  <div class="tx"><div class="nm">${c.n}</div><div class="sc">${c.s}</div></div></div>`;
+const half = Math.ceil(CLIENTS.length/2);
+// each track holds the list twice so the -50% loop is seamless
+const track = arr => arr.map(pill).join('') + arr.map(pill).join('');
+document.getElementById('row1').innerHTML = track(CLIENTS.slice(0, half));
+document.getElementById('row2').innerHTML = track(CLIENTS.slice(half));
+
+const fEl = document.getElementById('filters');
+fEl.innerHTML = CATS.map((c,i)=>`<button class="fbtn${i===0?' on':''}" data-c="${c.id}">${c.label}</button>`).join('');
+
+const gEl = document.getElementById('grid');
+function render(cat){
+  const list = cat==='all' ? PROJECTS : PROJECTS.filter(p=>p.cat===cat);
+  gEl.innerHTML = list.map(p=>{
+    const c = p.cover || p.images[0];
+    return `<article class="pcard" data-id="${p.id}">
+      <div class="pthumb">
+        <span class="chip">${p.sector}</span>
+        ${p.loc && p.loc!=='—' ? `<span class="chip loc">${p.loc}</span>` : ''}
+        <img src="${c.src}" alt="${p.title}" loading="lazy" width="${c.w}" height="${c.h}">
+      </div>
+      <div class="pbody">
+        <h3>${p.title}</h3>
+        <div class="pmeta">${p.year} &nbsp;·&nbsp; ${p.images.length>2 ? p.images.length+' frames' : 'Full case study'}</div>
+        <div class="ptags">${p.tags.map(t=>`<span class="ptag">${t}</span>`).join('')}</div>
+      </div>
+    </article>`;}).join('');
+  observe();
+  if(typeof bindTilt==='function') bindTilt();
+}
+fEl.addEventListener('click', e=>{
+  const b=e.target.closest('.fbtn'); if(!b) return;
+  fEl.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); render(b.dataset.c);
+});
+
+let io;
+function observe(){
+  if(io) io.disconnect();
+  io = new IntersectionObserver(es=>es.forEach(en=>{
+    if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+  }), {threshold:.06, rootMargin:'0px 0px -30px'});
+  document.querySelectorAll('.pcard').forEach((c,i)=>{ c.style.transitionDelay=(i%3)*70+'ms'; io.observe(c); });
+}
+
+const lb = document.getElementById('lb');
+let cur = 0;
+function openLB(id){ cur = PROJECTS.findIndex(p=>p.id===id); paint(); lb.classList.add('open'); document.body.classList.add('lock'); lb.scrollTop=0; }
+function paint(){
+  const p = PROJECTS[cur];
+  document.getElementById('lbchips').innerHTML =
+    `<span class="chip">${p.sector}</span>` +
+    (p.loc && p.loc!=='—' ? `<span class="chip loc">${p.loc}</span>`:'') +
+    `<span class="chip">${p.year}</span>`;
+  document.getElementById('lbtitle').textContent = p.title;
+  document.getElementById('lbdesc').textContent  = p.blurb;
+  document.getElementById('lbgrid').innerHTML = p.images.map(im=>
+    `<figure><img src="${im.src}" alt="${p.title}" loading="lazy" width="${im.w}" height="${im.h}"></figure>`).join('');
+  const prev=PROJECTS[cur-1], next=PROJECTS[cur+1];
+  document.getElementById('lbprev').disabled=!prev;
+  document.getElementById('lbnext').disabled=!next;
+  document.getElementById('lbprevt').textContent = prev?prev.title:'—';
+  document.getElementById('lbnextt').textContent = next?next.title:'—';
+}
+document.addEventListener('click', e=>{ const c=e.target.closest('.pcard'); if(c) openLB(c.dataset.id); });
+document.getElementById('lbprev').onclick = ()=>{ if(cur>0){cur--;paint();lb.scrollTop=0;} };
+document.getElementById('lbnext').onclick = ()=>{ if(cur<PROJECTS.length-1){cur++;paint();lb.scrollTop=0;} };
+function closeLB(){ lb.classList.remove('open'); document.body.classList.remove('lock'); }
+document.getElementById('lbclose').onclick = closeLB;
+lb.addEventListener('click', e=>{ if(e.target===lb) closeLB(); });
+document.addEventListener('keydown', e=>{
+  if(!lb.classList.contains('open')) return;
+  if(e.key==='Escape') closeLB();
+  if(e.key==='ArrowRight') document.getElementById('lbnext').click();
+  if(e.key==='ArrowLeft')  document.getElementById('lbprev').click();
+});
+
+/* ================= motion engine ================= */
+const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* scroll progress + condensing nav */
+const prog = document.getElementById('prog');
+const navEl = document.querySelector('nav');
+let ticking = false;
+function onScroll(){
+  const st = window.scrollY || document.documentElement.scrollTop;
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  prog.style.width = (max > 0 ? (st/max)*100 : 0) + '%';
+  navEl.classList.toggle('small', st > 60);
+  ticking = false;
+}
+addEventListener('scroll', ()=>{ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+onScroll();
+
+/* reveal on scroll — stagger siblings inside a group */
+const revIO = new IntersectionObserver(es=>es.forEach(en=>{
+  if(en.isIntersecting){ en.target.classList.add('in'); revIO.unobserve(en.target); }
+}), {threshold:.12, rootMargin:'0px 0px -60px'});
+function bindReveals(){
+  document.querySelectorAll('.rv,.rv-l,.rv-r,.rv-s').forEach(el=>{
+    if(el.dataset.bound) return; el.dataset.bound = '1'; revIO.observe(el);
+  });
+  document.querySelectorAll('.caps').forEach(g=>
+    [...g.children].forEach((c,i)=>c.style.transitionDelay = (i*90)+'ms'));
+}
+bindReveals();
+
+/* count-up stats */
+const nIO = new IntersectionObserver(es=>es.forEach(en=>{
+  if(!en.isIntersecting) return;
+  const el = en.target, raw = el.dataset.to, target = parseInt(raw,10), suf = raw.replace(/[0-9]/g,'');
+  if(REDUCED){ el.textContent = raw; nIO.unobserve(el); return; }
+  const t0 = performance.now(), dur = 1400;
+  (function step(t){
+    const p = Math.min((t-t0)/dur, 1);
+    el.textContent = Math.round(target * (1 - Math.pow(1-p, 3))) + (p===1 ? suf : '');
+    if(p < 1) requestAnimationFrame(step);
+  })(t0);
+  nIO.unobserve(el);
+}), {threshold:.6});
+document.querySelectorAll('.stat .n[data-to]').forEach(el=>nIO.observe(el));
+
+/* gentle parallax on the portrait */
+const pf = document.querySelector('.pf');
+if(pf && !REDUCED){
+  addEventListener('scroll', ()=>{
+    const y = window.scrollY;
+    if(y < 900) pf.style.transform = `translateY(${y * -0.06}px)`;
+  }, {passive:true});
+}
+
+/* 3D tilt on project cards */
+function bindTilt(){
+  if(REDUCED || matchMedia('(hover: none)').matches) return;
+  document.querySelectorAll('.pcard').forEach(card=>{
+    if(card.dataset.tilt) return; card.dataset.tilt = '1';
+    card.addEventListener('mousemove', e=>{
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left)/r.width - .5, py = (e.clientY - r.top)/r.height - .5;
+      card.style.transform =
+        `perspective(1000px) rotateY(${px*7}deg) rotateX(${-py*7}deg) translateY(-7px) scale(1.012)`;
+    });
+    card.addEventListener('mouseleave', ()=>{ card.style.transform = ''; });
+  });
+}
+
+/* keep marquee speed proportional to its content width */
+function pace(){
+  document.querySelectorAll('.mtrack').forEach(t=>{
+    const w = t.scrollWidth/2;
+    t.style.animationDuration = Math.max(26, Math.round(w/42)) + 's';
+  });
+}
+addEventListener('load', pace); pace();
+
+render('all');
+bindTilt();
+bindReveals();
+</script>
+</body>
+</html>
